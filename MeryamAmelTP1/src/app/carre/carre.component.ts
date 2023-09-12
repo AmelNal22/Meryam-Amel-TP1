@@ -12,10 +12,12 @@ export class CarreComponent{
   blue : string = 'blue';
   yellow : string = 'yellow';
 
+  colors: string[] = ['red', 'green'];
+
   @Input() color : string = '';
-  @Output() event = new EventEmitter();
+  @Output() changeColor = new EventEmitter();
 
   public addEvent(value : string) {
-    this.event.emit(value);
+    this.changeColor.emit(value);
   }
 }
