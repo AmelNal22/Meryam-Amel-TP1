@@ -1,9 +1,26 @@
-#logo {
-  height: 100vh;
+.first-square {
+  width : 400px;
+  height: 400px;
+  border: black 1px solid;
+}
+.square {
+  width: 190px;
+  height: 190px;
+  margin: 5px;
+}
+.row {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.red {
+  background-color : red;
 }
 .green {
-  background-color: green;
+  background-color : green;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
 }

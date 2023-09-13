@@ -1,14 +1,17 @@
-import { Component} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-logo',
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.scss']
 })
-export class LogoComponent{
-  public addItem(newItem:string){
-    console.log(newItem);
-    // @ts-ignore
-    document.getElementById('logo').style.backgroundColor = newItem;
+export class LogoComponent {
+
+  colors: string[] = ['red', 'green', 'blue', 'yellow'];
+
+  @Output() changeColor = new EventEmitter();
+
+  public addEvent(value : string) {
+    this.changeColor.emit(value);
   }
 }

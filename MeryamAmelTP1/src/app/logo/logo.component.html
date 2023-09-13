@@ -1,3 +1,5 @@
-<div id="logo">
-<app-carre (changeColor)="addItem($event)"></app-carre>
+<div class="first-square">
+  <div class="row">
+    <button *ngFor="let color of colors" class="square" (click)="addEvent(color)" [ngClass]="color"></button>
+  </div>
 </div>
