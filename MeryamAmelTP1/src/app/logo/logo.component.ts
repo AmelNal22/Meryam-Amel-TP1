@@ -8,5 +8,7 @@ import { Component} from '@angular/core';
 export class LogoComponent{
   public addItem(newItem:string){
     console.log(newItem);
+    // @ts-ignore
+    document.getElementById('logo').style.backgroundColor = newItem;
   }
 }

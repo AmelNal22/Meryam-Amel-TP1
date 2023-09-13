@@ -7,12 +7,12 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class CarreComponent{
 
-  red : string = 'red';
-  green : string = 'green';
-  blue : string = 'blue';
-  yellow : string = 'yellow';
+  //red : string = 'red';
+  //green : string = 'green';
+  //blue : string = 'blue';
+  //yellow : string = 'yellow';
 
-  colors: string[] = ['red', 'green'];
+  colors: string[] = ['red', 'green', 'blue', 'yellow'];
 
   @Input() color : string = '';
   @Output() changeColor = new EventEmitter();
