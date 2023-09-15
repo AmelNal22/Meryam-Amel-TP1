@@ -1,5 +1,3 @@
 <div class="first-square">
-  <div class="row">
-    <button *ngFor="let color of colors" class="square" (click)="addEvent(color)" [ngClass]="color"></button>
-  </div>
+    <button *ngFor="let color of colors" id="square" (click)="addEvent(color)" [ngClass]="color"></button>
 </div>
