@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
+
+  public color: string = ''
   public addItem(newItem:string){
-    // @ts-ignore
-    document.getElementById('body').style.backgroundColor = newItem;
+    this.color = newItem;
   }
 }

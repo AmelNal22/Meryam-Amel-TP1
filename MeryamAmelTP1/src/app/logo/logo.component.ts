@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class LogoComponent {
 
-  colors: string[] = ['red', 'green', 'blue', 'yellow'];
+  public colors: string[] = ['red', 'green', 'blue', 'yellow'];
 
   @Output() changeColor = new EventEmitter();
 
